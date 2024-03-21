@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleExpansionActivity">
+
+    <Button
+        android:id="@+id/backButtonSE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="backClick"
+        android:text="Powrót" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Informacje o grze"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="208dp"
+                android:layout_height="50dp"
+                android:text="Tytuł"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/expansionTitle"
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:text="dane"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Rodzaj"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/expansionType"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="gra/dodatek"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Rok wydania"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/expansionYear"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="dane"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Identyfikator w bazie BGG"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/expansionID"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="dane"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/cameraButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zrób zdjęcie" />
+
+            <Button
+                android:id="@+id/galleryButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otwórz galerię" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/deleteButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteClick"
+        android:text="Usuń zdjęćia tej gry" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/PhotoLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

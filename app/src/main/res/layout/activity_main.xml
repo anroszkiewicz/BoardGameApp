@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podsumowanie konta"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="334dp"
+        android:layout_height="529dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMessage">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="Nazwa użytkownika" />
+
+            <TextView
+                android:id="@+id/showUsername"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="username" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="Liczba posiadanych gier" />
+
+            <TextView
+                android:id="@+id/gameNumber"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="0" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/gameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gameClick"
+            android:text="Zobacz listę gier" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="Liczba posiadanych dodatków" />
+
+            <TextView
+                android:id="@+id/expansionNumber"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="0" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/expansionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="expansionClick"
+            android:text="Zobacz listę dodatków" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="Data ostatniej synchronizacji" />
+
+            <TextView
+                android:id="@+id/syncDate"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:text="data" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/syncButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="syncClick"
+            android:text="Synchronizacja" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearClick"
+            android:text="Wyczyść dane" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
